@@ -1,0 +1,125 @@
+2019-05-02 14:21:46,297 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 14:29:38,246 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 14:30:19,581 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 15:00:47,913 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 15:01:18,732 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 15:02:53,137 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 15:03:32,560 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-02 15:15:19,172 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:03:06,452 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:22:01,783 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:24:29,508 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:41:42,833 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:53:42,754 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:54:02,284 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:54:11,282 ERROR: Exception on /explore [GET] [in /Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/norm/mystuff/Microblog/app/routes.py", line 34, in explore
+    posts = Posts.query.order_by(Post.timestamp.desc()).all()
+NameError: name 'Posts' is not defined
+2019-05-03 12:54:46,150 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 12:55:21,143 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 13:11:09,902 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 13:11:36,096 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 13:11:42,457 ERROR: Exception on /index [GET] [in /Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/norm/mystuff/Microblog/app/routes.py", line 28, in index
+    page = requests.arg.get('page', 1, type=int)
+NameError: name 'requests' is not defined
+2019-05-03 13:11:46,344 ERROR: Exception on /index [GET] [in /Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/norm/mystuff/Microblog/app/routes.py", line 28, in index
+    page = requests.arg.get('page', 1, type=int)
+NameError: name 'requests' is not defined
+2019-05-03 13:12:20,802 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 13:12:23,962 ERROR: Exception on /index [GET] [in /Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/norm/mystuff/Microblog/app/routes.py", line 28, in index
+    page = request.arg.get('page', 1, type=int)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'arg'
+2019-05-03 13:12:25,037 ERROR: Exception on /index [GET] [in /Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/norm/mystuff/Microblog/app/routes.py", line 28, in index
+    page = request.arg.get('page', 1, type=int)
+  File "/Users/norm/mystuff/Microblog/venv/lib/python3.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'arg'
+2019-05-03 13:13:16,219 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 13:21:14,910 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-03 13:36:01,663 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:43]
+2019-05-04 11:42:14,689 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:45]
+2019-05-04 12:06:07,399 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:45]
+2019-05-04 12:32:50,733 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:47]
+2019-05-04 12:40:33,420 INFO: Microblog startup [in /Users/norm/mystuff/Microblog/app/__init__.py:47]
